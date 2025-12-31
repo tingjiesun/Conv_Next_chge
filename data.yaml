@@ -1,0 +1,5 @@
+train: ../dataset_1219/train/images
+val: ../dataset_1219/valid/images
+
+nc: 6
+names: ['crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled-in_scale', 'scratches']

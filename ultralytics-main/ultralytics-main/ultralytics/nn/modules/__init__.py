@@ -101,8 +101,16 @@ from .transformer import (
     TransformerEncoderLayer,
     TransformerLayer,
 )
+from .convnextv2 import (
+    ConvNeXtV2Block,
+    ConvNeXtV2Stem,
+    ConvNeXtV2Downsample,
+)
 
 __all__ = (
+    "ConvNeXtV2Block",
+    "ConvNeXtV2Stem",
+    "ConvNeXtV2Downsample",
     "AIFI",
     "C1",
     "C2",

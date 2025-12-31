@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-def trunc_normal_(tensor, mean=0., std=1., a=-2., b=2.):
+def trunc_normal_(tensor, mean=0., std=1., a=-2., b=2.):  #避免极端初值→权重不会太大或太小，梯度更稳定
     # 简化的 trunc_normal 实现，避免依赖 timm
     return nn.init.trunc_normal_(tensor, mean=mean, std=std, a=a, b=b)
 
